@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pers. Links</title>
+<style>
+    h1{
+        font-size: 3em;
+    }
+    a {
+        font-size: 2em;
+        text-align: center;
+        text-decoration: none;
+        color: brown;
+    }
+    a:visited{
+        color: blue;
+    }
+    p#secreto{
+        font-size: 2em;
+
+    }
+    
+    #insta{
+        font-size: 1em;
+
+    }
+    #insta:hover{
+        background-color: blueviolet;
+
+    }
+    p#secreto > a#insta{
+        display: none;
+    }
+    p#secreto:hover > a#insta{
+        display: block;
+    }
+
+</style> 
+</head>
+<body>
+    <h1>Personalizando um link</h1>
+    <p> <a href="http://youtube.com" target="_blank">Youtube.com</a></p>
+    <p>
+        <a href="http://g1.com" target="_blank">Globo.com</a>
+    </p>
+    <p id="secreto"> Passe o mouse <b>aqui</b> para ver o link do instagram 
+        <a href="http://instagram.com.br" target="_blank" id="insta">Instagram.com</a>
+    </p>
+</body>
+</html>
