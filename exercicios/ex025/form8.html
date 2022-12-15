@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso da tag output</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <fieldset>
+        <legend>Parte 1</legend>
+        <form action="arq.js" method="get">
+            <p>
+                <label for="inum1">Numero 1: </label>
+                <input type="number" name="num1" id="inum1" required min="1" max="100000" oninput="ivalor.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            </p>
+            <p>
+                <label for="inum2">Numero 2: </label>
+                <input type="number" name="num2" id="inum2" required min="1" max="100000" oninput="ivalor.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            </p>
+            <p>
+                <label for="ivalor">Valor somado: </label>
+                <output id="ivalor">0</output>
+            </p>
+        
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Parte 2</legend>
+        
+            
+            <p>
+                <label for="irange">Satisfação:</label>
+                <input type="range" name="range" id="irange" min="0" max="10" oninput="ival.innerHTML = irange.value">
+                           
+                <output id="ival">5</output>
+
+            </p>
+        
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Parte 3</legend>
+        
+            <p>
+                <label for="iano">Em que ano você nasceu ? </label>
+                <input type="number" name="ano" id="iano" min="1900" max="2022" oninput="iidade.innerHTML = 2022 - iano.value">
+            </p>
+            <p>
+                Você tem <output id="iidade"></output> anos
+            </p>
+        
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Parte 4</legend>
+        
+            <p>
+                <label for="iirmaos">Quantos irmãos você tem? </label>
+                <input type="number" name="irmaos" id="iirmaos" oninput="famNumber()">
+                <p>
+                    Sua familia tem
+                
+                <output id="nirmaos">x</output> pessoas.</p>
+            </p>
+        
+    </fieldset>
+    <br>
+
+    <p><input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    </p>
+    </form>
+    <script>
+        function famNumber(){
+            nirmaos.innerHTML = Number(iirmaos.value) + 3;
+        }
+
+    </script>
+</body>
+</html>
