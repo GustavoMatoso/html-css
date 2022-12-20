@@ -1,0 +1,30 @@
+*{
+
+}
+
+body{
+    width: 90vw;
+    margin: auto;
+    text-align: justify;
+    text-indent: 30px;
+    background-color: lightgray;
+}
+header h1 {
+    text-align: center;
+    background-color: lightgray;
+}
+
+nav > ul > li {
+    background-color: darkgray;
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    
+
+}
+
+main{
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 15px;
+}
