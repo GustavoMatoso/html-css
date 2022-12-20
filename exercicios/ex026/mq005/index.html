@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste media query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
         <h1>Site Guiguinheeis</h1>
-    <nav>
+        <span id="burguer" class="material-symbols-outlined" onclick="abreMenu()">
+            menu
+            </span>
+    <nav id="itens">
         <ul>
             <li><a href="#">Área 1</a></li>
             <li><a href="#">Área 2</a></li>
@@ -24,7 +28,7 @@
         <article>
 
             <h2>Testando Media Queries</h2>
-
+    
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam harum adipisci ad quibusdam voluptatem saepe similique ipsum vero esse explicabo alias maxime veniam, consequuntur ipsam voluptas, neque unde optio praesentium.</p> 
             <p>Omnis atque sint beatae quisquam, maiores corrupti? Provident beatae accusamus assumenda blanditiis inventore explicabo minus impedit earum, vitae, quasi eveniet, maiores non tempore facere ea consectetur ad ipsa perferendis. Inventore.
             Ratione, quo totam odit eum tempora deleniti quae animi voluptatibus dicta ipsa neque assumenda tenetur non dolores possimus odio. Tenetur iure atque, blanditiis ratione esse rem voluptate neque voluptatum dignissimos.
@@ -41,5 +45,16 @@
             <p>Provident pariatur quibusdam possimus dolorum iusto, quisquam libero nulla nemo corporis! Voluptate tempora ipsum dolor sit amet consectetur adipisicing elit. Aliquam harum adipisci ad quibusdam voluptatem saepe similique ipsum vero esse explicabo alias maxime veniam, consequuntur ipsam voluptas, neque unde optio delectus provident, doloremque illum dolore id excepturi eaque fugiat similique, ut nobis sit molestias suscipit officiis maxime.</p>
         </article>
     </main>
+    <script>
+        function abreMenu(){
+            if(itens.style.display == 'none'){
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
+            }
+            
+        }
+    </script>
 </body>
 </html>
